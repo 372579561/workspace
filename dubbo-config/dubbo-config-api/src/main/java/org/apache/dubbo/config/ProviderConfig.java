@@ -41,12 +41,12 @@ public class ProviderConfig extends AbstractServiceConfig {
     // ======== protocol default values, it'll take effect when protocol's attributes are not set ========
 
     /**
-     * Service ip addresses (used when there are multiple network cards available)
+     * service ip addresses (used when there are multiple network cards available)
      */
     private String host;
 
     /**
-     * Service port
+     * service port
      */
     private Integer port;
 

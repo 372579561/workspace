@@ -75,7 +75,7 @@ public abstract class AbstractInterfaceConfig extends AbstractMethodConfig {
     protected String stub;
 
     /**
-     * Service monitor
+     * service monitor
      */
     protected MonitorConfig monitor;
 

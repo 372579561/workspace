@@ -130,10 +130,10 @@ public class ServiceAnnotationBeanPostProcessor implements BeanDefinitionRegistr
 
         for (String packageToScan : packagesToScan) {
 
-            // Registers @Service Bean first
+            // Registers @service Bean first
             scanner.scan(packageToScan);
 
-            // Finds all BeanDefinitionHolders of @Service whether @ComponentScan scans or not.
+            // Finds all BeanDefinitionHolders of @service whether @ComponentScan scans or not.
             Set<BeanDefinitionHolder> beanDefinitionHolders =
                     findServiceBeanDefinitionHolders(scanner, packageToScan, registry, beanNameGenerator);
 
@@ -144,7 +144,7 @@ public class ServiceAnnotationBeanPostProcessor implements BeanDefinitionRegistr
                 }
 
                 if (logger.isInfoEnabled()) {
-                    logger.info(beanDefinitionHolders.size() + " annotated Dubbo's @Service Components { " +
+                    logger.info(beanDefinitionHolders.size() + " annotated Dubbo's @service Components { " +
                             beanDefinitionHolders +
                             " } were scanned under package[" + packageToScan + "]");
                 }
@@ -152,7 +152,7 @@ public class ServiceAnnotationBeanPostProcessor implements BeanDefinitionRegistr
             } else {
 
                 if (logger.isWarnEnabled()) {
-                    logger.warn("No Spring Bean annotating Dubbo's @Service was found under package["
+                    logger.warn("No Spring Bean annotating Dubbo's @service was found under package["
                             + packageToScan + "]");
                 }
 
@@ -325,10 +325,10 @@ public class ServiceAnnotationBeanPostProcessor implements BeanDefinitionRegistr
         }
 
         Assert.notNull(interfaceClass,
-                "@Service interfaceClass() or interfaceName() or interface class must be present!");
+                "@service interfaceClass() or interfaceName() or interface class must be present!");
 
         Assert.isTrue(interfaceClass.isInterface(),
-                "The type that was annotated @Service is not an interface!");
+                "The type that was annotated @service is not an interface!");
 
         return interfaceClass;
     }
@@ -374,7 +374,7 @@ public class ServiceAnnotationBeanPostProcessor implements BeanDefinitionRegistr
 
         propertyValues.addPropertyValues(new AnnotationPropertyValuesAdapter(service, environment, ignoreAttributeNames));
 
-        // References "ref" property to annotated-@Service Bean
+        // References "ref" property to annotated-@service Bean
         addPropertyReference(builder, "ref", annotatedServiceBeanName);
         // Set interface
         builder.addPropertyValue("interface", interfaceClass.getName());

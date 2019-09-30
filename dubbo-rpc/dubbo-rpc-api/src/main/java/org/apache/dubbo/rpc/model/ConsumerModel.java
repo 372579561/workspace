@@ -40,7 +40,7 @@ public class ConsumerModel {
      *  If service name, service instance, proxy object,methods should not be null. If these are null
      *  then this constructor will throw {@link IllegalArgumentException}
      * @param serviceName Name of the service.
-     * @param serviceInterfaceClass Service interface class.
+     * @param serviceInterfaceClass service interface class.
      * @param proxyObject  Proxy object.
      * @param methods Methods of service class
      * @param attributes Attributes of methods.
@@ -51,8 +51,8 @@ public class ConsumerModel {
             , Method[] methods
             , Map<String, Object> attributes) {
 
-        Assert.notEmptyString(serviceName, "Service name can't be null or blank");
-        Assert.notNull(serviceInterfaceClass, "Service interface class can't null");
+        Assert.notEmptyString(serviceName, "service name can't be null or blank");
+        Assert.notNull(serviceInterfaceClass, "service interface class can't null");
         Assert.notNull(proxyObject, "Proxy object can't be null");
         Assert.notNull(methods, "Methods can't be null");
 

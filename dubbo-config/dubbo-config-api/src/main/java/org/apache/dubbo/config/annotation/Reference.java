@@ -46,17 +46,17 @@ public @interface Reference {
     String interfaceName() default "";
 
     /**
-     * Service version, default value is empty string
+     * service version, default value is empty string
      */
     String version() default "";
 
     /**
-     * Service group, default value is empty string
+     * service group, default value is empty string
      */
     String group() default "";
 
     /**
-     * Service target URL for direct invocation, if this is specified, then registry center takes no effect.
+     * service target URL for direct invocation, if this is specified, then registry center takes no effect.
      */
     String url() default "";
 
@@ -118,7 +118,7 @@ public @interface Reference {
     String proxy() default "";
 
     /**
-     * Service stub name, use interface name + Local if not set
+     * service stub name, use interface name + Local if not set
      */
     String stub() default "";
 
@@ -150,17 +150,17 @@ public @interface Reference {
     String ondisconnect() default "";
 
     /**
-     * Service owner, default value is empty string
+     * service owner, default value is empty string
      */
     String owner() default "";
 
     /**
-     * Service layer, default value is empty string
+     * service layer, default value is empty string
      */
     String layer() default "";
 
     /**
-     * Service invocation retry times
+     * service invocation retry times
      *
      * @see Constants#DEFAULT_RETRIES
      */
@@ -189,7 +189,7 @@ public @interface Reference {
     boolean sent() default false;
 
     /**
-     * Service mock name, use interface name + Mock if not set
+     * service mock name, use interface name + Mock if not set
      */
     String mock() default "";
 

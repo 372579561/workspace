@@ -37,7 +37,7 @@ public final class ServiceDefinitionBuilder {
     /**
      * Describe a Java interface in {@link ServiceDefinition}.
      *
-     * @return Service description
+     * @return service description
      */
     public static ServiceDefinition build(final Class<?> interfaceClass) {
         ServiceDefinition sd = new ServiceDefinition();
@@ -92,7 +92,7 @@ public final class ServiceDefinitionBuilder {
     /**
      * Describe a Java interface in Json schema.
      *
-     * @return Service description
+     * @return service description
      */
     public static String schema(final Class<?> clazz) {
         ServiceDefinition sd = build(clazz);

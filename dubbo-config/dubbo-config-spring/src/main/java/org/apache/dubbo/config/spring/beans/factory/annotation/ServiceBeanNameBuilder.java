@@ -28,7 +28,7 @@ import static org.apache.dubbo.config.spring.util.AnnotationUtils.resolveInterfa
 
 
 /**
- * Dubbo {@link Service @Service} Bean Builder
+ * Dubbo {@link Service @service} Bean Builder
  *
  * @see Service
  * @see Reference

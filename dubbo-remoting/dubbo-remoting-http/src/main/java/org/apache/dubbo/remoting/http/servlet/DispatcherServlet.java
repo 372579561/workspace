@@ -27,7 +27,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * Service dispatcher Servlet.
+ * service dispatcher Servlet.
  */
 public class DispatcherServlet extends HttpServlet {
 
@@ -56,7 +56,7 @@ public class DispatcherServlet extends HttpServlet {
             throws ServletException, IOException {
         HttpHandler handler = handlers.get(request.getLocalPort());
         if (handler == null) {// service not found.
-            response.sendError(HttpServletResponse.SC_NOT_FOUND, "Service not found.");
+            response.sendError(HttpServletResponse.SC_NOT_FOUND, "service not found.");
         } else {
             handler.handle(request, response);
         }

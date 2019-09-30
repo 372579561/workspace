@@ -65,7 +65,7 @@ public class AnnotationUtils {
             interfaceName = defaultInterfaceClass.getName();
         } else {
             throw new IllegalStateException(
-                    "The @Service undefined interfaceClass or interfaceName, and the type "
+                    "The @service undefined interfaceClass or interfaceName, and the type "
                             + defaultInterfaceClass.getName() + " is not a interface.");
         }
 

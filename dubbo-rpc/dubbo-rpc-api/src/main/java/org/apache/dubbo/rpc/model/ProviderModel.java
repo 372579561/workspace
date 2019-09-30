@@ -34,7 +34,7 @@ public class ProviderModel {
 
     public ProviderModel(String serviceName, Object serviceInstance, Class<?> serviceInterfaceClass) {
         if (null == serviceInstance) {
-            throw new IllegalArgumentException("Service[" + serviceName + "]Target is NULL.");
+            throw new IllegalArgumentException("service[" + serviceName + "]Target is NULL.");
         }
 
         this.serviceName = serviceName;

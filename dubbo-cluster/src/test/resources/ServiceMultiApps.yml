@@ -17,7 +17,7 @@
 #
 #
 
-# Service scope, with multiple apps
+# service scope, with multiple apps
 ---
 configVersion: v2.7
 scope: service

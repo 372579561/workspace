@@ -41,8 +41,8 @@ public interface Protocol {
      * export the same URL<br>
      * 3. Invoker instance is passed in by the framework, protocol needs not to care <br>
      *
-     * @param <T>     Service type
-     * @param invoker Service invoker
+     * @param <T>     service type
+     * @param invoker service invoker
      * @return exporter reference for exported service, useful for unexport the service later
      * @throws RpcException thrown when error occurs during export the service, for example: port is occupied
      */
@@ -58,8 +58,8 @@ public interface Protocol {
      * 3. When there's check=false set in URL, the implementation must not throw exception but try to recover when
      * connection fails.
      *
-     * @param <T>  Service type
-     * @param type Service class
+     * @param <T>  service type
+     * @param type service class
      * @param url  URL address for the remote service
      * @return invoker service's local proxy
      * @throws RpcException when there's any error while connecting to the service provider

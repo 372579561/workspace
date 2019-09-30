@@ -127,7 +127,7 @@ public class RegistryProtocolTest {
 
     /**
      * The name of the service does not match and can't override invoker
-     * Service name matching, service version number mismatch
+     * service name matching, service version number mismatch
      */
     @Test
     public void testNotifyOverride_notmatch() throws Exception {

@@ -24,7 +24,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 
 /**
- * {@link DemoService} Service implementation
+ * {@link DemoService} service implementation
  *
  * @since 2.5.8
  */

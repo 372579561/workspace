@@ -53,7 +53,7 @@ public class Ls implements BaseCommand {
         });
 
         //Header
-        tTable.addRow("Provider Service Name", "PUB");
+        tTable.addRow("Provider service Name", "PUB");
 
         //Content
         for (ProviderModel providerModel : ProviderModelList) {
@@ -75,7 +75,7 @@ public class Ls implements BaseCommand {
         });
 
         //Header
-        tTable.addRow("Consumer Service Name", "NUM");
+        tTable.addRow("Consumer service Name", "NUM");
 
         //Content
         //TODO to calculate consumerAddressNum

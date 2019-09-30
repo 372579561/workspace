@@ -47,12 +47,12 @@ public class ProtocolConfig extends AbstractConfig {
     private String name;
 
     /**
-     * Service ip address (when there are multiple network cards available)
+     * service ip address (when there are multiple network cards available)
      */
     private String host;
 
     /**
-     * Service port
+     * service port
      */
     private Integer port;
 

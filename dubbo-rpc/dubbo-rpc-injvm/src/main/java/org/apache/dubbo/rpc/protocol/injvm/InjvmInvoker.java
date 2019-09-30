@@ -56,7 +56,7 @@ class InjvmInvoker<T> extends AbstractInvoker<T> {
     public Result doInvoke(Invocation invocation) throws Throwable {
         Exporter<?> exporter = InjvmProtocol.getExporter(exporterMap, getUrl());
         if (exporter == null) {
-            throw new RpcException("Service [" + key + "] not found.");
+            throw new RpcException("service [" + key + "] not found.");
         }
         RpcContext.getContext().setRemoteAddress(Constants.LOCALHOST_VALUE, 0);
         return exporter.getInvoker().invoke(invocation);

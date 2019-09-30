@@ -28,7 +28,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Service annotation
+ * service annotation
  *
  * @export
  */
@@ -49,17 +49,17 @@ public @interface Service {
     String interfaceName() default "";
 
     /**
-     * Service version, default value is empty string
+     * service version, default value is empty string
      */
     String version() default "";
 
     /**
-     * Service group, default value is empty string
+     * service group, default value is empty string
      */
     String group() default "";
 
     /**
-     * Service path, default value is empty string
+     * service path, default value is empty string
      */
     String path() default "";
 
@@ -69,7 +69,7 @@ public @interface Service {
     boolean export() default true;
 
     /**
-     * Service token, default value is false
+     * service token, default value is false
      */
     String token() default "";
 
@@ -99,12 +99,12 @@ public @interface Service {
     boolean register() default true;
 
     /**
-     * Service weight value, default value is 0
+     * service weight value, default value is 0
      */
     int weight() default 0;
 
     /**
-     * Service doc, default value is ""
+     * service doc, default value is ""
      */
     String document() default "";
 
@@ -120,7 +120,7 @@ public @interface Service {
     String local() default "";
 
     /**
-     * Service stub name, use interface name + Local if not set
+     * service stub name, use interface name + Local if not set
      */
     String stub() default "";
 
@@ -157,17 +157,17 @@ public @interface Service {
     String ondisconnect() default "";
 
     /**
-     * Service owner, default value is empty string
+     * service owner, default value is empty string
      */
     String owner() default "";
 
     /**
-     * Service layer, default value is empty string
+     * service layer, default value is empty string
      */
     String layer() default "";
 
     /**
-     * Service invocation retry times
+     * service invocation retry times
      *
      * @see Constants#DEFAULT_RETRIES
      */
@@ -196,7 +196,7 @@ public @interface Service {
     boolean sent() default false;
 
     /**
-     * Service mock name, use interface name + Mock if not set
+     * service mock name, use interface name + Mock if not set
      */
     String mock() default "";
 
@@ -265,7 +265,7 @@ public @interface Service {
     String[] registry() default {};
 
     /**
-     * Service tag name
+     * service tag name
      */
     String tag() default "";
 }

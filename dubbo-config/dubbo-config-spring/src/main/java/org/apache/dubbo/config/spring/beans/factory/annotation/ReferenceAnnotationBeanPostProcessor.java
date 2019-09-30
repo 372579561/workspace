@@ -132,8 +132,8 @@ public class ReferenceAnnotationBeanPostProcessor extends AnnotationInjectedBean
             handler = new ReferenceBeanInvocationHandler(referenceBean);
         }
 
-        if (applicationContext.containsBean(referencedBeanName)) { // Is local @Service Bean or not ?
-            // ReferenceBeanInvocationHandler's initialization has to wait for current local @Service Bean has been exported.
+        if (applicationContext.containsBean(referencedBeanName)) { // Is local @service Bean or not ?
+            // ReferenceBeanInvocationHandler's initialization has to wait for current local @service Bean has been exported.
             localReferenceBeanInvocationHandlerCache.put(referencedBeanName, handler);
         } else {
             // Remote Reference Bean should initialize immediately

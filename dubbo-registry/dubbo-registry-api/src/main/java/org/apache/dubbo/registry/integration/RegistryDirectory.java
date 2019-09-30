@@ -543,7 +543,7 @@ public class RegistryDirectory<T> extends AbstractDirectory<T> implements Notify
     @Override
     public List<Invoker<T>> doList(Invocation invocation) {
         if (forbidden) {
-            // 1. No service provider 2. Service providers are disabled
+            // 1. No service provider 2. service providers are disabled
             throw new RpcException(RpcException.FORBIDDEN_EXCEPTION, "No provider available from registry " +
                     getUrl().getAddress() + " for service " + getConsumerUrl().getServiceKey() + " on consumer " +
                     NetUtils.getLocalHost() + " use dubbo version " + Version.getVersion() +
